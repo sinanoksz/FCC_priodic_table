@@ -18,7 +18,7 @@ PRINT_ELEMENT() {
   else
     ATOMIC_NUMBER=$(echo $($PSQL "SELECT atomic_number FROM elements WHERE atomic_number=$INPUT;") | sed 's/ //g')
   fi
-  
+   
   if [[ -z $ATOMIC_NUMBER ]]
   then
     echo "I could not find that element in the database."
