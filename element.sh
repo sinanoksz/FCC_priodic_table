@@ -9,7 +9,7 @@ MAIN_PROGRAM() {
     PRINT_ELEMENT $1
   fi
 }
-
+ 
 PRINT_ELEMENT() {
   INPUT=$1
   if [[ ! $INPUT =~ ^[0-9]+$ ]]
